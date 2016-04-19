@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+<TextView  
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:text="Enter the length of the two legs of the triangle"
+    android:layout_span="2"
+    />
+<TextView  
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:text="The corresponding trig values will be calculated"
+    android:layout_span="2"
+    />
+    
+	<TableLayout 
+    	android:layout_width="fill_parent"
+    	android:layout_height="fill_parent"
+    	android:gravity="center_horizontal"
+    >
+    
+	<TableRow 
+    		android:gravity="center_horizontal">
+		<TextView  
+    		android:layout_width="wrap_content" 
+    		android:layout_height="wrap_content" 
+    		android:text="Enter adjacent side"
+    		android:layout_gravity="center"
+    		
+    	/>		
+    	<EditText
+    		android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:id="@+id/etSide1"
+    		android:text=""
+    		android:layout_gravity="center_horizontal"
+    	/>
+	</TableRow>
+	
+	<TableRow 
+    		android:gravity="center_horizontal">
+		<TextView  
+    		android:layout_width="fill_parent" 
+    		android:layout_height="wrap_content" 
+    		android:text="Enter adjacent side"
+    		android:layout_gravity="center"
+    		
+    	/>		
+    	<EditText
+    		android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:id="@+id/etSide2"
+    		android:text=""
+    		android:layout_gravity="center"
+    	/>	
+	</TableRow>
+	
+	<TableRow 
+    		android:gravity="center_horizontal">
+		<Button
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:id="@+id/btnCalc"
+			android:text="Sin/Cos/Tan"
+			android:layout_span="2"
+    		android:layout_gravity="center_horizontal"
+		/>
+	</TableRow>
+	
+	<TableRow 
+    		android:gravity="center_horizontal">
+		<RadioGroup 
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical"
+    		android:layout_gravity="center_horizontal"
+    		android:id="@+id/rdGroup"
+		>
+		
+			<RadioButton 
+				android:id="@+id/rdSCT"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Sin/Cos/Tan"
+    			android:layout_gravity="center_horizontal"
+			/>
+		
+			<RadioButton 
+				android:id="@+id/rdCSC"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Csc/Sec/Cot"
+    			android:layout_gravity="center_horizontal"
+			/>		
+		</RadioGroup>
+	</TableRow>
+
+	</TableLayout>
+</LinearLayout>
